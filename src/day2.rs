@@ -113,7 +113,7 @@ fn line_score2(opponent_str: &str, own_str: &str) -> Result<Score, String> {
     Ok(base_score(&own) + outcome_score(&outcome))
 }
 
-pub fn _run() {
+pub fn run() {
     fn get_score(line_actions: fn(&str, &str) -> Result<Score, String>) -> Result<Score, String> {
         contents().split('\n').collect::<Vec<&str>>()
             .iter()

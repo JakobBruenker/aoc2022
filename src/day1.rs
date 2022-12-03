@@ -16,7 +16,7 @@ const _EXAMPLE: &str = "1000\n\
 10000\n\
 ";
 
-pub fn _run() {
+pub fn run() {
   let contents = std::fs::read_to_string("inputs/1").expect("Input not found");
   // let contents = _EXAMPLE;
   let mut elves = vec![];
